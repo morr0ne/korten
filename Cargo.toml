@@ -1,0 +1,17 @@
+[package]
+name = "korten"
+version = "0.0.1"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["Federico Maria Morrone <contact@morrone.dev>"]
+description = ""
+readme = "README.md"
+documentation = "https://docs.rs/korten"
+repository = "https://github.com/morr0ne/korten"
+include = ["src/**/*.rs", "README.md", "LICENSE-APACHE", "LICENSE-MIT"]
+
+[dependencies]
+rustix = { version = "0.38.21", default-features = false, features = ["mm"] }
+
+[dev-dependencies]
+scudo = "0.1.3"
